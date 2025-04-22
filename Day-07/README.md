@@ -19,6 +19,8 @@ Automate the shutdown of Ubuntu Instances only using Ansible Conditionals
 
 Hint: Use `when` condition on ansible `gather_facts`
 
+command to run ansible file: ansible-playbook -i inventory.ini ec2_create.yaml --vault-password-file vault.pass
+
 
 
 
