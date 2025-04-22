@@ -19,3 +19,9 @@ ssh-copy-id -f "-o IdentityFile <PATH TO PEM FILE>" ubuntu@<INSTANCE-PUBLIC-IP>
 - Update `PasswordAuthentication yes`
 - Restart SSH -> `sudo systemctl restart ssh`
 
+Check SSH port (TCP 22) directly with nc or telnet:
+nc -zv <ip address> 22 
+if port is open you will get:
+Connection to <ip address> port 22 [tcp/ssh] succeeded!
+
+
