@@ -26,7 +26,9 @@ openssl rand -base64 2048 > vault.pass
 ansible-vault create group_vars/all/pass.yml --vault-password-file vault.pass
 ```
 
-
+###notes:
+recommended:1.create a strong pass like above (openssl generate a random password)
+            2.store the vault.pass file in aws/azure secret manager oe such facilty in real case
 
 
 
